@@ -73,11 +73,12 @@ public class GameInstance : BaseNetworkGameInstance
         {
             CustomEquipments[customEquipment.GetHashId()] = customEquipment;
         }
+
+        UpdateAvailableItems();
     }
 
     private void LateUpdate()
     {
-        UpdateAvailableItems();
         if (!PlayerSaveValidated && MonetizationManager.Save.IsPurchasedItemsLoaded)
         {
             PlayerSaveValidated = true;
