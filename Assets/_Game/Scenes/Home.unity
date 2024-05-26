@@ -1116,6 +1116,8 @@ MonoBehaviour:
     regionCode: asia
   - title: Jp
     regionCode: jp
+  - title: Hong Kong
+    regionCode: hk
   dropdownRegion: {fileID: 2084511501}
   uiDisconnected: {fileID: 2084511499}
   uiConnected: {fileID: 1278016199}
