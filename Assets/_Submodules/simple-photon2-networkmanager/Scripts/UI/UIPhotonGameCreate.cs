@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
@@ -8,8 +6,8 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class UIPhotonGameCreate : UIBase
 {
-    public string defaultRoomName = "Let's play together !!";
-    public byte maxPlayerCustomizable = 32;
+    public string defaultRoomName = "Let's play!!";
+    public byte maxPlayerCustomizable = 8;
     public bool maxPlayerMustBeEvenNumber;
     public InputField inputRoomName;
     public InputField inputRoomPassword;
