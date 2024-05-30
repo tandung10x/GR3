@@ -1076,7 +1076,6 @@ MonoBehaviour:
   textSelectCharacter: {fileID: 1106099277}
   textSelectHead: {fileID: 2123263489}
   textSelectBomb: {fileID: 1521108954}
-  textRegion: {fileID: 1049965802}
   inputName: {fileID: 1278016197}
   characterModelTransform: {fileID: 722984679}
   bombEntityTransform: {fileID: 1707261614}
@@ -1087,6 +1086,7 @@ MonoBehaviour:
   headData: {fileID: 0}
   bombData: {fileID: 0}
   previewState: 0
+  btnChangeTeam: {fileID: 2126247228}
 --- !u!114 &828723592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1514,18 +1514,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1049965802 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114435834900517386, guid: 78ceeb1f017ec8f4aa4c27288ec6ca34,
-    type: 3}
-  m_PrefabInstance: {fileID: 1278016196}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1106099277 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114659899950954744, guid: 78ceeb1f017ec8f4aa4c27288ec6ca34,
@@ -3381,3 +3369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2126247228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1450107137587314, guid: 893a9c6503fad70428976da6fa3b55d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1966919139}
+  m_PrefabAsset: {fileID: 0}

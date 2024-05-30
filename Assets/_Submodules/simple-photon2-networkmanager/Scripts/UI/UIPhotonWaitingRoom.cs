@@ -32,7 +32,6 @@ public class UIPhotonWaitingRoom : UIBase
     public Transform waitingPlayerTeamBListContainer;
     public GameObject[] hostObjects;
     public GameObject[] nonHostObjects;
-    public GameObject btnChangeTeam;
     public bool hostAlwaysReady = true;
     public int autoStartWhenPlayersReadyAtLeast = 0;
     public int canStartWhenPlayersReadyAtLeast = 0;
@@ -43,7 +42,6 @@ public class UIPhotonWaitingRoom : UIBase
     private readonly Dictionary<string, UIPhotonWaitingPlayer> waitingTeamAPlayers = new Dictionary<string, UIPhotonWaitingPlayer>();
     private readonly Dictionary<string, UIPhotonWaitingPlayer> waitingTeamBPlayers = new Dictionary<string, UIPhotonWaitingPlayer>();
 
-
     private void OnEnable()
     {
         SimplePhotonNetworkManager.onJoinedRoom += OnJoinedRoomCallback;
@@ -53,11 +51,6 @@ public class UIPhotonWaitingRoom : UIBase
         SimplePhotonNetworkManager.onCustomRoomPropertiesChanged += OnCustomRoomPropertiesChangedCallback;
         SimplePhotonNetworkManager.onMasterClientSwitched += OnMasterClientSwitchedCallback;
         OnJoinedRoomCallback();
-        if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(BaseNetworkGameManager.CUSTOM_ROOM_GAME_RULE, out object gameRuleObject))
-        {
-            Debug.LogError("ABCDEF");
-            btnChangeTeam.SetActive(gameRuleObject.ToString().Equals("TeamDeathMatchNetworkGameRule"));
-        }
     }
 
     private void OnDisable()

@@ -30,6 +30,7 @@ public class UIMainMenu : MonoBehaviour
     public HeadData headData;
     public BombData bombData;
     public PreviewState previewState;
+    public GameObject btnChangeTeam;
 
     public int SelectCharacter
     {
@@ -86,6 +87,16 @@ public class UIMainMenu : MonoBehaviour
     public int MaxBomb
     {
         get { return GameInstance.AvailableBombs.Count - 1; }
+    }
+
+    private void Awake()
+    {
+        SimplePhotonNetworkManager.Singleton.onUpdateWaitingRoom = OnUpdateWaitingRoom;
+    }
+
+    private void OnUpdateWaitingRoom(string gameMode)
+    {
+        btnChangeTeam.SetActive(gameMode.Equals("Team Death Match"));
     }
 
     private void Start()
