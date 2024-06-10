@@ -89,11 +89,6 @@ public class UIMainMenu : MonoBehaviour
         get { return GameInstance.AvailableBombs.Count - 1; }
     }
 
-    private void Awake()
-    {
-        SimplePhotonNetworkManager.Singleton.onUpdateWaitingRoom = OnUpdateWaitingRoom;
-    }
-
     private void OnUpdateWaitingRoom(string gameMode)
     {
         btnChangeTeam.SetActive(gameMode.Equals("Team Death Match"));
@@ -108,6 +103,8 @@ public class UIMainMenu : MonoBehaviour
             ui.onPurchaseSuccess.RemoveListener(UpdateAvailableItems);
             ui.onPurchaseSuccess.AddListener(UpdateAvailableItems);
         }
+
+        SimplePhotonNetworkManager.Singleton.onUpdateWaitingRoom = OnUpdateWaitingRoom;
     }
 
     private IEnumerator StartRoutine()
