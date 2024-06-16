@@ -10083,7 +10083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986428575}
   m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: 9, y: 25.820507, z: -23}
+  m_LocalPosition: {x: 9, y: 28.418585, z: -24.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10104,7 +10104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 986428579}
   target: {fileID: 737143103}
-  targetOffset: {x: 0, y: 0, z: -10}
+  targetOffset: {x: 0, y: 0, z: -13}
   smoothFollow: 0
   followSmoothing: 10
   xRotation: 60
