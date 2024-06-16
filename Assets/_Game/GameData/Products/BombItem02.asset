@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c75c13950345b478c10604f7be8688, type: 3}
+  m_Name: BombItem02
+  m_EditorClassIdentifier: 
+  iconTexture: {fileID: 2800000, guid: c95c7919a79b6364c85e37e876b4d5d1, type: 3}
+  previewTexture: {fileID: 0}
+  category: 
+  title: Red Bomb Item
+  description: Red Bomb Item
+  pricesOption: 0
+  price:
+    id: GO
+    amount: 60
+  prices: []
+  canBuyOnlyOnce: 1
+  currencies: []
+  items:
+  - {fileID: 11400000, guid: 57a54f44ebe251d4cba0bf29eb7ae0fe, type: 2}
