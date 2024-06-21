@@ -6,7 +6,7 @@ using Photon.Realtime;
 
 public class BombEntity : MonoBehaviourPunCallbacks
 {
-    public const float DurationBeforeDestroy = 2f;
+    public const float DurationBeforeDestroy = 3f;
     protected int _addBombRange;
     public int addBombRange
     {
@@ -38,7 +38,7 @@ public class BombEntity : MonoBehaviourPunCallbacks
     public float radius = 0.4f;
     public float explosionForceRadius = 0f;
     public float explosionForce = 0f;
-    public float lifeTime = 2f;
+    public float lifeTime = 3f;
     public float kickMoveSpeed = 5f;
     public bool canExplodeThroughBricks;
 
