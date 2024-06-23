@@ -3,15 +3,16 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f13a5b8d7626aa4bbcbb046e9b81280, type: 3}
   m_Name: TeamDeathMatchNetworkGameRule
   m_EditorClassIdentifier: 
-  title: Team Death Match
+  title: Team Deathmatch
   description: The team which kill more will win
   defaultBotCount: 7
   botCount: 7
@@ -22,6 +23,5 @@ MonoBehaviour:
   defaultMatchScore: 0
   matchScore: 0
   uiGameplayPrefab: {fileID: 114990390903254608, guid: 7cf5d6e95a8ab7e4caae5c921f36b317,
-    type: 2}
-  endMatchCountDown: 10
+    type: 3}
   rewards: []

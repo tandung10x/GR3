@@ -1249,7 +1249,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   filters:
-  - title: Battle (IO)
+  - title: IO
     description: 
     onlineScene:
       sceneAsset: {fileID: 102900000, guid: eb1e4e6ca6d605148b58d3ecfa166770, type: 3}
@@ -1257,7 +1257,7 @@ MonoBehaviour:
     gameplayRule: {fileID: 11400000, guid: 8252b738eeab41c488592c66efd0564e, type: 2}
     customFilters: []
     maxConnections: 16
-  - title: Battle (DM)
+  - title: SingleDeathmatch
     description: 
     onlineScene:
       sceneAsset: {fileID: 102900000, guid: eb1e4e6ca6d605148b58d3ecfa166770, type: 3}
@@ -1265,7 +1265,7 @@ MonoBehaviour:
     gameplayRule: {fileID: 11400000, guid: 8a508bd358197df43a08e6a6e92b9532, type: 2}
     customFilters: []
     maxConnections: 16
-  - title: Battle (TDM)
+  - title: Team Deathmatch
     description: 
     onlineScene:
       sceneAsset: {fileID: 102900000, guid: eb1e4e6ca6d605148b58d3ecfa166770, type: 3}

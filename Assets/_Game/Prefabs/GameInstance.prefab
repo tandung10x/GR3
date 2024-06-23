@@ -74,7 +74,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dbfb1b92edaf99d49af0cade730aa98b, type: 2}
   - {fileID: 11400000, guid: 57a54f44ebe251d4cba0bf29eb7ae0fe, type: 2}
   bots:
-  - name: Josh
+  - name: John
     headDataIndex: 0
     bombDataIndex: 0
     characterDataIndex: 0
@@ -86,10 +86,26 @@ MonoBehaviour:
     headDataIndex: 2
     bombDataIndex: 0
     characterDataIndex: 2
-  - name: Randeer
+  - name: Lee
     headDataIndex: -1
     bombDataIndex: 0
     characterDataIndex: -1
+  - name: Jack
+    headDataIndex: 0
+    bombDataIndex: 1
+    characterDataIndex: -1
+  - name: Peter
+    headDataIndex: 2
+    bombDataIndex: 0
+    characterDataIndex: 1
+  - name: Tony
+    headDataIndex: 1
+    bombDataIndex: 0
+    characterDataIndex: 2
+  - name: Oliver
+    headDataIndex: 0
+    bombDataIndex: 0
+    characterDataIndex: 2
   customEquipments: []
   characterLayer: 8
   bombLayer: 9
