@@ -67,7 +67,6 @@ public class UIPhotonGameCreate : UIBase
         }
         UpdateNetworkManager();
         SimplePhotonNetworkManager.Singleton.CreateWaitingRoom();
-        SimplePhotonNetworkManager.Singleton.onUpdateWaitingRoom?.Invoke(gameRuleList.captionText.text);
         Hide();
     }
 
@@ -80,7 +79,6 @@ public class UIPhotonGameCreate : UIBase
         }
         UpdateNetworkManager();
         Hide();
-        SimplePhotonNetworkManager.Singleton.onUpdateWaitingRoom?.Invoke(gameRuleList.captionText.text);
     }
 
     protected void UpdateNetworkManager()

@@ -30,7 +30,6 @@ public class UIMainMenu : MonoBehaviour
     public HeadData headData;
     public BombData bombData;
     public PreviewState previewState;
-    public GameObject btnChangeTeam;
 
     public int SelectCharacter
     {
@@ -89,11 +88,6 @@ public class UIMainMenu : MonoBehaviour
         get { return GameInstance.AvailableBombs.Count - 1; }
     }
 
-    private void OnUpdateWaitingRoom(string gameMode)
-    {
-        btnChangeTeam.SetActive(gameMode.Equals("Team Death Match"));
-    }
-
     private void Start()
     {
         StartCoroutine(StartRoutine());
@@ -103,8 +97,6 @@ public class UIMainMenu : MonoBehaviour
             ui.onPurchaseSuccess.RemoveListener(UpdateAvailableItems);
             ui.onPurchaseSuccess.AddListener(UpdateAvailableItems);
         }
-
-        SimplePhotonNetworkManager.Singleton.onUpdateWaitingRoom = OnUpdateWaitingRoom;
     }
 
     private IEnumerator StartRoutine()

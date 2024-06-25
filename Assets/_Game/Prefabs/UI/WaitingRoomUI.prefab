@@ -121,8 +121,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114254719462158808}
   m_HandleRect: {fileID: 224771668802348964}
   m_Direction: 2
-  m_Value: -0.0000052616515
-  m_Size: 0.41998127
+  m_Value: -0.000004939261
+  m_Size: 0.42332947
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1603,6 +1603,7 @@ MonoBehaviour:
   - {fileID: 1178107384258262}
   nonHostObjects:
   - {fileID: 1465461740761084}
+  btnChangeTeam: {fileID: 1450107137587314}
   hostAlwaysReady: 1
   autoStartWhenPlayersReadyAtLeast: 0
   canStartWhenPlayersReadyAtLeast: 0
@@ -1779,7 +1780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000044745284, y: 174.0009}
+  m_AnchoredPosition: {x: 0.000044745284, y: 173.00085}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &114972178667236320
@@ -1976,7 +1977,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000057617517, y: 174.00092}
+  m_AnchoredPosition: {x: -0.0000057617517, y: 173.00087}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &114357979208418810
@@ -3093,8 +3094,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114509758420165190}
   m_HandleRect: {fileID: 224928059029550296}
   m_Direction: 2
-  m_Value: -0.0000052616515
-  m_Size: 0.41998127
+  m_Value: -0.000004939261
+  m_Size: 0.42332947
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3133,7 +3134,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000011053406, y: 174.00092}
+  m_AnchoredPosition: {x: -0.000011053406, y: 173.00087}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &114467547785668280
@@ -3454,8 +3455,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114824904398625928}
   m_HandleRect: {fileID: 224032686635610742}
   m_Direction: 2
-  m_Value: -0.0000052616515
-  m_Size: 0.4199811
+  m_Value: -0.000004939261
+  m_Size: 0.42332947
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

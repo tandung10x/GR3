@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
-using Photon.Pun.UtilityScripts;
 using Photon.Realtime;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using PlayerState = SimplePhotonNetworkManager.PlayerState;
@@ -32,6 +30,7 @@ public class UIPhotonWaitingRoom : UIBase
     public Transform waitingPlayerTeamBListContainer;
     public GameObject[] hostObjects;
     public GameObject[] nonHostObjects;
+    public GameObject btnChangeTeam;
     public bool hostAlwaysReady = true;
     public int autoStartWhenPlayersReadyAtLeast = 0;
     public int canStartWhenPlayersReadyAtLeast = 0;
@@ -61,6 +60,18 @@ public class UIPhotonWaitingRoom : UIBase
         SimplePhotonNetworkManager.onPlayerPropertiesChanged -= OnPlayerPropertiesChangedCallback;
         SimplePhotonNetworkManager.onCustomRoomPropertiesChanged -= OnCustomRoomPropertiesChangedCallback;
         SimplePhotonNetworkManager.onMasterClientSwitched -= OnMasterClientSwitchedCallback;
+    }
+
+    private void Update()
+    {
+        if (textGameRule.text.Equals("Team Deathmatch") && !btnChangeTeam.activeInHierarchy)
+        {
+            btnChangeTeam.SetActive(true);
+        }
+        else if (!textGameRule.text.Equals("Team Deathmatch") && btnChangeTeam.activeInHierarchy)
+        {
+            btnChangeTeam.SetActive(false);
+        }
     }
 
     private void UpdateRoomData()

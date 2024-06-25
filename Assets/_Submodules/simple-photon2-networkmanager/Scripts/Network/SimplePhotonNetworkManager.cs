@@ -60,7 +60,6 @@ public class SimplePhotonNetworkManager : MonoBehaviourPunCallbacks
     public static System.Action<Player> onMasterClientSwitched;
     public static System.Action<Hashtable> onCustomRoomPropertiesChanged;
     public static System.Action<RegionHandler> onRegionListReceived;
-    public System.Action<string> onUpdateWaitingRoom;
 
     public bool isLog;
     public SceneNameField offlineScene;
