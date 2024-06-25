@@ -529,6 +529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   products:
   - {fileID: 11400000, guid: 749f25cf82519b34099f8a4bd81d1d31, type: 2}
+  - {fileID: 11400000, guid: 5ef127ade14e96c48bed224392a88fba, type: 2}
   - {fileID: 11400000, guid: 6937d9e0b7fa1514fbc01bcffacdf16c, type: 2}
   - {fileID: 11400000, guid: 4da8c580d2d7ada48b1f2c04de648ba3, type: 2}
   prefab: {fileID: 114917547052356054, guid: 259646da9b407c64c9bae7d050450d8a, type: 3}
