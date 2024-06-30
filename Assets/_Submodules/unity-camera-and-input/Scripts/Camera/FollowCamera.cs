@@ -7,7 +7,7 @@ public class FollowCamera : MonoBehaviour
     public Camera targetCamera;
     public Transform target;
     public Vector3 targetOffset;
-    [Header("Follow smoothness")]
+    [Header("Follow Smoothness")]
     public bool smoothFollow;
     public float followSmoothing = 10.0f;
     [Header("Rotation")]
@@ -17,7 +17,7 @@ public class FollowCamera : MonoBehaviour
     public bool useTargetYRotation;
     [Header("Zoom")]
     public float zoomDistance = 10.0f;
-    [Header("Zoom by ratio")]
+    [Header("Zoom by Ratio")]
     public bool zoomByAspectRatio;
     public List<ZoomByAspectRatioSetting> zoomByAspectRatioSettings = new List<ZoomByAspectRatioSetting>()
     {
@@ -27,7 +27,7 @@ public class FollowCamera : MonoBehaviour
         new ZoomByAspectRatioSetting() { width = 4, height = 3, zoomDistance = 5.5f },
         new ZoomByAspectRatioSetting() { width = 5, height = 4, zoomDistance = 7 },
     };
-    [Header("Wall hit spring")]
+    [Header("Wall Hit Spring")]
     public bool enableWallHitSpring;
     public LayerMask wallHitLayerMask = -1;
     public QueryTriggerInteraction wallHitQueryTriggerInteraction = QueryTriggerInteraction.Ignore;
